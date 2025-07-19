@@ -26,10 +26,12 @@ function display_members(fetched_text) {
 }
 
 function copy(text_to_copy) {
-	if (text_to_copy == "nav") { text_to_copy = `<div id="soweliring"><p><a href="https://thedressedmolerat.github.io/webring?name=NAME&to=skipprevious">⇇</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=previous">←</a> <a href="https://thedressedmolerat.github.io/webring?to=random">⇅</a> <a href="https://thedressedmolerat.github.io/webring">⌂</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=next">→</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=skipprevious">⇉</a></div>`; }
+	if (text_to_copy == "nav") { text_to_copy = `<p id="soweliring"><a href="https://thedressedmolerat.github.io/webring?name=NAME&to=skipprevious">⇇</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=previous">⮜</a> <a href="https://thedressedmolerat.github.io/webring?to=random">⇅</a> <a href="https://thedressedmolerat.github.io/webring">soweli ring</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=next">⮞</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=skipprevious">⇉</a></p>`; }
 
 	navigator.clipboard.writeText(text_to_copy);
 }
 
 // wow promise chaining is wild
 fetch('EVERYONE.txt').then(fetch_response => fetch_response.text()).then(display_members);
+
+// handle query strings here
