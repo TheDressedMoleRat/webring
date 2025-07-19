@@ -1,0 +1,31 @@
+body {
+	background-color: #32286f; 
+	color: white; 
+	width: min(800px, 90vw); 
+	margin: 40px auto 100px;
+	font-size: 1rem;
+	font-family: "Autour One", system-ui, sans-serif;
+	line-height: 2;
+}
+
+a { color: #07ffff; }
+h1, h2 { font-family: "Chokokutai", system-ui, sans-serif; }
+h1 { font-size: 4rem; }
+h2 { font-size: 2rem; }
+
+button {
+	border: none;
+	padding: 8px;
+	margin: 5px;
+	font-family: monospace, sans-serif;
+	background-color: #b13737;
+	color: white;
+}
+
+button:hover {
+	background-color: #d87b7b;
+}
+
+button:active {
+	background-color: #0f0;
+}
