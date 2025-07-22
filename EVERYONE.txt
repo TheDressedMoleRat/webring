@@ -1,2 +1,4 @@
-soweliAwa thedressedmolerat.github.io/
-google https://www.google.com
+// Your name can include basically any characters, just not colon!
+// The parsing code is nice so spaces and weird characters are fine!
+
+jan Awa: thedressedmolerat.github.io/

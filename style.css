@@ -4,14 +4,18 @@ body {
 	width: min(800px, 90vw); 
 	margin: 40px auto 100px;
 	font-size: 1rem;
-	font-family: "Autour One", system-ui, sans-serif;
 	line-height: 2;
+	font-family: "Autour One", system-ui, sans-serif;
 }
 
 a { color: #07ffff; }
-h1, h2 { font-family: "Chokokutai", system-ui, sans-serif; }
-h1 { font-size: 4rem; }
+h1 { font-size: min(4rem, 14vw); }
 h2 { font-size: 2rem; }
+
+h1, h2 { 
+	font-family: "Chokokutai", system-ui, sans-serif; 
+	margin: 0; 
+}
 
 button {
 	border: none;
@@ -20,12 +24,24 @@ button {
 	font-family: monospace, sans-serif;
 	background-color: #b13737;
 	color: white;
+	font-size: 1rem;
 }
 
-button:hover {
-	background-color: #d87b7b;
+button:hover { background-color: #d87b7b; }
+button:active { background-color: #0f0; }
+
+input[type=text] {
+	background-color: #32286f;
+	border: 2px solid white;
+	outline: none;
+	padding: 6px;
+	color: white;
+	font-family: system-ui, sans-serif;
+	font-size: 1rem;
 }
 
-button:active {
-	background-color: #0f0;
+#footer {
+	margin-top: 100px;
+	color: #746baa;
+	text-align: center;
 }

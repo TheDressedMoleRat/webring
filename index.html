@@ -10,27 +10,32 @@
 </head>
 <body>
 	<h1>The soweli webring</h1>
-	<p>This is a webring for anyone who wants to join, made by me, jan Awa / Dressed Mole-Rat! It's not done yet though, so it doesn't work :)</p>
+	<p>This is a webring for anyone who wants to join, made by me, jan Awa / Dressed Mole-Rat.</p>
 
 	<h2>Members</h2>
-	<p>So far there are only <span id="members_count">X</span> members.</p>
+	<p>So far there is only <span id="members_count">X</span> member, me!</p>
 	<ol id="members_list"></ol>
 	<script src="script.js"></script>
 
 	<h2>Join!!</h2>
-	<p>If you have a website, please join the soweli ring! Simply add yourself in EVERYONE.txt on <a href="https://github.com/TheDressedMoleRat/webring">the repo</a> and make a pull request. If you don't know what that means, you can just message me on discord @thedressedmolerat and I'll add you!</p>
+	<p>If you have a website, please join the soweli ring! Simply add yourself to EVERYONE.txt on <a href="https://github.com/TheDressedMoleRat/webring" target="_blank">the repo</a> and make a pull request. If you don't know what that means, you can just message me on Discord <a href="https://discord.com/users/536968796288581656" target="_blank">@thedressedmolerat</a> and I'll add you!</p>
 
 	<h2>Links</h2>
-	<p>On your site, you can either add this html:</p>
-	<p id="soweliring"><a href="https://thedressedmolerat.github.io/webring?name=NAME&to=skipprevious">⇇</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=previous">⮜</a> <a href="https://thedressedmolerat.github.io/webring?to=random">⇅</a> <a href="https://thedressedmolerat.github.io/webring">soweli ring</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=next">⮞</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=skipprevious">⇉</a> <button onclick="copy('nav')">COPY HTML</button></p>
-	<p>Or add all or some of the following links:</p>
+	<p>The two forwards and two back links are optional, but they exist in case there is some site with no webring navigation. Write the name you use in the webring to get correctly generated HTML that you can copy below: <input type="text" id="user_name"></p>
+	<p>You can use the premade widget:</p>
 	<ul>
-		<li>previous site: <button onclick="copy('<a href=\'https://thedressedmolerat.github.io/webring?name=NAME&to=previous\'>previous site</a>')">COPY HTML</button></li>
-		<li>next site: <button onclick="copy('<a href=\'https://thedressedmolerat.github.io/webring?name=NAME&to=next\'>next site</a>')">COPY HTML</button></li>
-		<li>two sites back: <button onclick="copy('<a href=\'https://thedressedmolerat.github.io/webring?name=NAME&to=skipprevious\'>two sites back</a>')">COPY HTML</button></li>
-		<li>two sites forwards: <button onclick="copy('<a href=\'https://thedressedmolerat.github.io/webring?name=NAME&to=skipnext\'>two sites forwards</a>')">COPY HTML</button></li>
-		<li>random site: <button onclick="copy('<a href=\'https://thedressedmolerat.github.io/webring?to=random\'>random site</a>')">COPY HTML</button></li>
-		<li>index: <button onclick="copy('<a href=\'https://thedressedmolerat.github.io/webring\'>index</a>')">COPY HTML</button></li>
+		<li><a href="https://thedressedmolerat.github.io/webring?name=NAME&to=skipprevious">⇇</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=previous">⮜</a> <a href="https://thedressedmolerat.github.io/webring?to=random">⇅</a> <a href="https://thedressedmolerat.github.io/webring">soweli ring</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=next">⮞</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=skipprevious">⇉</a> <button onclick="copy('nav')">COPY HTML</button></li>
 	</ul>
+	<p>Or these individual links:</p>
+	<ul>
+		<li><a href="https://thedressedmolerat.github.io/webring?name=NAME&to=previous">previous site</a>: <button onclick="copy('<a href=\'https://thedressedmolerat.github.io/webring?name=NAME&to=previous\'>previous site</a>')">COPY HTML</button></li>
+		<li><a href="https://thedressedmolerat.github.io/webring?name=NAME&to=next">next site</a>: <button onclick="copy('<a href=\'https://thedressedmolerat.github.io/webring?name=NAME&to=next\'>next site</a>')">COPY HTML</button></li>
+		<li><a href="https://thedressedmolerat.github.io/webring?name=NAME&to=skipprevious">two sites back</a>: <button onclick="copy('<a href=\'https://thedressedmolerat.github.io/webring?name=NAME&to=skipprevious\'>two sites back</a>')">COPY HTML</button></li>
+		<li><a href="https://thedressedmolerat.github.io/webring?name=NAME&to=skipnext">two sites forward</a>: <button onclick="copy('<a href=\'https://thedressedmolerat.github.io/webring?name=NAME&to=skipnext\'>two sites forward</a>')">COPY HTML</button></li>
+		<li><a href="https://thedressedmolerat.github.io/webring?to=random">random site</a>: <button onclick="copy('<a href=\'https://thedressedmolerat.github.io/webring?to=random\'>random site</a>')">COPY HTML</button></li>
+		<li><a href="https://thedressedmolerat.github.io/webring">index</a>: <button onclick="copy('<a href=\'https://thedressedmolerat.github.io/webring\'>index</a>')">COPY HTML</button></li>
+	</ul>
+
+	<p id="footer">Development on this webring started 20 July 2025, and concluded 22 July 2025.</p>
 </body>
 </html>
