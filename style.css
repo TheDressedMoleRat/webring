@@ -1,11 +1,14 @@
 body {
 	background-color: #32286f; 
 	color: white; 
-	width: min(800px, 90vw); 
-	margin: 40px auto 100px;
 	font-size: 1rem;
 	line-height: 2;
 	font-family: "Autour One", system-ui, sans-serif;
+}
+
+#container {
+	width: min(800px, 90vw); 
+	margin: 40px auto 100px;
 }
 
 a { color: #07ffff; }

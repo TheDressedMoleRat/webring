@@ -40,16 +40,18 @@ function copy(text_to_copy) {
 	if (text_to_copy == "nav") { text_to_copy = `<p id="soweliring"><a href="https://thedressedmolerat.github.io/webring?name=NAME&to=skipprevious">⇇</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=previous">⮜</a> <a href="https://thedressedmolerat.github.io/webring?to=random">⇅</a> <a href="https://thedressedmolerat.github.io/webring">soweli ring</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=next">⮞</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=skipprevious">⇉</a></p>`; }
 
 	let name_value = document.getElementById("user_name").value;
-	let updated = text_to_copy.replace("NAME", encodeURIComponent(name_value));
+	let updated = text_to_copy.replaceAll("NAME", encodeURIComponent(name_value));
 	navigator.clipboard.writeText(updated);
 }
 
 // ########################################################################## //
 
 // wow promise chaining is wild
-fetch('EVERYONE.txt').then(fetch_response => fetch_response.text()).then(fetched_text => {
-	// display
-	display_members(fetched_text);
+
+fetch('EVERYONE.txt')
+	.then(fetch_response => fetch_response.text())
+	.then(display_members)
+	.then(() => {
 
 	// redirect
 	const url_parameters = new URLSearchParams(window.location.search);
