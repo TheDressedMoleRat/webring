@@ -32,6 +32,9 @@ button {
 
 button:hover { background-color: #d87b7b; }
 button:active { background-color: #0f0; }
+button.subtle { background-color: #3f37a0;}
+button.subtle:hover { background-color: #5d52d4;}
+button.subtle:active { background-color: #0f0; }
 
 input[type=text] {
 	background-color: #32286f;
