@@ -37,7 +37,7 @@ function display_members(fetched_text) {
 }
 
 function copy(text_to_copy) {
-	if (text_to_copy == "nav") { text_to_copy = `<p id="soweliring"><a href="https://thedressedmolerat.github.io/webring?name=NAME&to=skipprevious">⇇</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=previous">⮜</a> <a href="https://thedressedmolerat.github.io/webring?to=random">⇅</a> <a href="https://thedressedmolerat.github.io/webring">soweli ring</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=next">⮞</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=skipprevious">⇉</a></p>`; }
+	if (text_to_copy == "nav") { text_to_copy = `<p id="soweliring"><a href="https://thedressedmolerat.github.io/webring?name=NAME&to=skipprevious">⇇</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=previous">&lt;</a> <a href="https://thedressedmolerat.github.io/webring?to=random">⇅</a> <a href="https://thedressedmolerat.github.io/webring">soweli ring</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=next">&gt;</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=skipprevious">⇉</a></p>`; }
 
 	let name_value = document.getElementById("user_name").value;
 	let updated = text_to_copy.replaceAll("NAME", encodeURIComponent(name_value));
@@ -73,7 +73,8 @@ fetch('EVERYONE.txt')
 			target_index = (target_index + members_names.length) % members_names.length;
 			target_url = members_links[target_index];
 		} else {
-			alert(`"${url_name}" does not exist in the members list!`);
+			(url_name == "NAME" ) ? alert(`Replace "NAME" in the URL with your name in the ring!`)
+			: alert(`"${url_name}" does not exist in the members list!`);
 		}
 	} else if (url_to != null) {
 		alert(`${url_to} isn't a valid to-value. Valid to-values are: ${Object.keys(offsets).join(", ")}`);
