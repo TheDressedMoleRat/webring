@@ -81,4 +81,10 @@ fetch('EVERYONE.txt')
 	}
 
 	if (target_url) window.location.replace(target_url);
+	
+	document.addEventListener("DOMContentLoaded", () => {
+		document.getElementById("container").style.display = "block";
+		document.getElementById("redirecting").style.display = "none";
+		document.body.style.backgroundColor = "#32286f";
+	})
 })
