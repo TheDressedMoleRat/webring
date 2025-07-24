@@ -1,5 +1,6 @@
 let members_names = [];
 let members_links = [];
+let page_loaded = false;
 const offsets = { "next": 1, "previous": -1, "skipnext": 2, "skipprevious": -2 }
 
 function fix_url(url) {
@@ -81,10 +82,14 @@ fetch('EVERYONE.txt')
 	}
 
 	if (target_url) window.location.replace(target_url);
-	
-	document.addEventListener("DOMContentLoaded", () => {
+
+	if (page_loaded) {
 		document.getElementById("container").style.display = "block";
 		document.getElementById("redirecting").style.display = "none";
 		document.body.style.backgroundColor = "#32286f";
-	})
+	}
+})
+
+document.addEventListener("DOMContentLoaded", () => {
+	page_loaded = true;
 })
