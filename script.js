@@ -81,15 +81,11 @@ fetch('EVERYONE.txt')
 		alert(`${url_to} isn't a valid to-value. Valid to-values are: ${Object.keys(offsets).join(", ")}`);
 	}
 
-	if (target_url) window.location.replace(target_url);
-
-	if (page_loaded) {
+	if (target_url) {
+		window.location.replace(target_url);
+	} else {
 		document.getElementById("container").style.display = "block";
 		document.getElementById("redirecting").style.display = "none";
 		document.body.style.backgroundColor = "#32286f";
 	}
-})
-
-document.addEventListener("DOMContentLoaded", () => {
-	page_loaded = true;
 })
