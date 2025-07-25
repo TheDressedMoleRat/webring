@@ -38,7 +38,7 @@ function display_members(fetched_text) {
 }
 
 function copy(text_to_copy) {
-	if (text_to_copy == "nav") { text_to_copy = `<p id="soweliring"><a href="https://thedressedmolerat.github.io/webring?name=NAME&to=skipprevious">⇇</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=previous">&lt;</a> <a href="https://thedressedmolerat.github.io/webring?to=random">⇅</a> <a href="https://thedressedmolerat.github.io/webring">soweli ring</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=next">&gt;</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=skipnext">⇉</a></p>`; }
+	if (text_to_copy == "nav") { text_to_copy = `<p id="soweliring" style="display: flex; justify-content: space-between; width: 16em;"><a href="https://thedressedmolerat.github.io/webring?name=NAME&to=skipprevious">⇇</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=previous">&lt;</a> <a href="https://thedressedmolerat.github.io/webring?to=random">⇅</a> <a href="https://thedressedmolerat.github.io/webring">soweli ring</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=next">&gt;</a> <a href="https://thedressedmolerat.github.io/webring?name=NAME&to=skipnext">⇉</a></p>`; }
 
 	let name_value = document.getElementById("user_name").value;
 	let updated = text_to_copy.replaceAll("NAME", encodeURIComponent(name_value));
