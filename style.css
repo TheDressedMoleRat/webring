@@ -48,7 +48,7 @@ input[type=text] {
 }
 
 #footer {
+	display: flex;
 	margin-top: 100px;
 	color: #746baa;
-	text-align: center;
 }
