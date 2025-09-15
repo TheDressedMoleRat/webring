@@ -1,10 +1,11 @@
 // Your name can include basically any characters, just not colon!
 // The parsing code is nice so spaces and weird characters are fine!
 
-jan Awa: thedressedmolerat.github.io/
+soweli Awa: thedressedmolerat.github.io/
 jb: https://jbcarreon123.nekoweb.org/webrings/
 op0sit: http://op0sit.github.io
 asnev: https://asnev.neocities.org/
 janjuna: https://janjuna.neocities.org/
 apriljailer: https://jailer.neocities.org/contact
 soko Sijeni: https://sijeni.li.pona.la/
+jan Awa: https://janawa.bearblog.dev
