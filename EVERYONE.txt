@@ -12,7 +12,7 @@ soko Sijeni: https://sijeni.li.pona.la/
 jan Awa: https://janawa.bearblog.dev/jan/
 504: https://slashdiv.neocities.org/home?z=/tokilog
 epikijetesantakalu: https://epiku.net/
-Redtail: https://redtail.works/
+// Redtail: https://redtail.works/
 austin: https://austinhuang.me/
 cblast ^_^: https://creamblast.neocities.org/home
 iicor: https://iicor.neocities.org
