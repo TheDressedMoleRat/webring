@@ -16,3 +16,4 @@ epikijetesantakalu: https://epiku.net/
 austin: https://austinhuang.me/
 cblast ^_^: https://creamblast.neocities.org/home
 iicor: https://iicor.neocities.org
+toasty: https://toasti.neocities.org/buttonmania
